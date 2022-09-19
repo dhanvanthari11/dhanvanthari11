@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothi", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navlist {
+    width: 100%;
+    padding: 5px 10vw;
+    position: fixed;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+}
+
+.navlist ul li:first-child {
+    flex: 1;
+}
+
+.navlist ul h4 {
+    font-family: serif;
+}
+
+.navlist ul a {
+    margin-left: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    background-image: linear-gradient(#000000c3, #000000c3), url('../back.jpg');
+    background-repeat: none;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.container h1 {
+    font-family: seriff;
+    margin-bottom: 100px;
+    letter-spacing: 0.5px;
+}
+
+.cointainer p {
+    margin-bottom: 30px;
+    letter-spacing: 20px;
+}
+
+.container button {
+    padding: 10px;
+    background: none;
+    border: 1px solid #ff7;
+}
+
+
+/*nav .logo {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+}*/
+
+
+/*nav {
+    height: 70px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+}*/
+
+nav ul {
+    float: right;
+    /*  margin-right: 30px;*/
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+
+/*nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+}*/
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #23dbdb;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+
+/*nav ul ul li a i {
+    margin-left: 45px;
+}*/
+
+section {
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+form {
+    width: 350px;
+    position: relative;
+}
+
+form .form-field::before {
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #888888;
+    content: " ";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form .form-field:nth-child(1)::before {
+    background-image: url(img/user-icon.png);
+    width: 20px;
+    height: 20px;
+    top: 15px;
+}
+
+form .form-field:nth-child(2)::before {
+    background-image: url(img/lock-icon.png);
+    width: 16px;
+    height: 16px;
+}
+
+form .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+form input {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #4A4A4A;
+    text-indent: 40px;
+}
+
+form .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.9rem 2.5rem;
+    text-align: center;
+    background-color: #47AB11;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+}
